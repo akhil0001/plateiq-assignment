@@ -1,0 +1,22 @@
+.vendor-info--short{
+    justify-content: space-between;
+}
+
+.short-info-child {
+    font-weight:500;
+}
+
+.vendor-remarks {
+    color: rgba(0, 0, 0, 0.4);
+    text-overflow: ellipsis;
+    width:150px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.vendor-subtitle{
+    font-weight:600;
+    font-size:12px;
+    color:rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}

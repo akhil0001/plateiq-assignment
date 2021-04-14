@@ -1,0 +1,8 @@
+.image-viewer-container {
+    background-color: #4b677e;
+}
+.image {
+    object-fit:contain;
+    height: 90%;
+}
+
