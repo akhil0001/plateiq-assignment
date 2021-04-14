@@ -10,9 +10,13 @@
     margin: 10px 0px;
 }
 
-.vendor-status {
+.vendor-status--mapped {
     font-size:12px;
     color: green;
+}
+.vendor-status--not-mapped {
+    font-size:12px;
+    color: red;
 }
 
 .vendor-title{

@@ -2,7 +2,6 @@ import React from 'react';
 import placeHolderImage from '../../placeholder-invoice.png';
 import './index.css';
 
-console.log(placeHolderImage)
 export const ImageViewer = ({imgSrc, imgAlt}) => {
     return (
         (

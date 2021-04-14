@@ -1,23 +1,36 @@
 import React from 'react';
 import './index.css';
 
+const getColumnsData = (data) => {
+    return data.reduce((acc,curr) => {
+        acc[curr['title']] = curr['value'];
+        return acc;
+    },{})
+}
 
-export const VendorShortInfo = () => (
-    <div className="vendor-info--short flex mt-20">
-        <div className="vendor-id short-info-child">
-            000003526
+export const VendorShortInfo = (props) => {
+    const {data} = props;
+    if(!data){
+        return null
+    }
+    const columnsData = getColumnsData(data);
+    return (
+        <div className="vendor-info--short flex mt-20">
+            <div className="vendor-id short-info-child">
+                {columnsData['invoice no']}
+            </div>
+            <div className="vendor-date short-info-child">
+            {columnsData['invoice date']}
+            </div>
+            <div className="vendor-restaurant short-info-child">
+            {columnsData['restaurant']}
+            </div>
+            <div className="vendor-remarks short-info-child">
+            {columnsData['remarks']}
+            </div>
+            <div className="vendor-total-bill short-info-child">
+            {columnsData['total']}
+            </div>
         </div>
-        <div className="vendor-date short-info-child">
-            July 09,2017
-        </div>
-        <div className="vendor-business short-info-child">
-            Monty's Cheese Shop
-        </div>
-        <div className="vendor-remarks short-info-child">
-            Loreum Ipsum Generation foo bar
-        </div>
-        <div className="vendor-total-bill short-info-child">
-            $10,000.00
-        </div>
-    </div>
-)
+    )
+}

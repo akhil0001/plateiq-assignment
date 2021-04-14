@@ -1,9 +1,10 @@
 .vendor-info--large{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px 10px;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 20px;
         grid-template-areas:
+          ". . . ."
           ". . . ."
           ". . . .";
           border-bottom: 2px solid rgba(0,0,0,0.1);
