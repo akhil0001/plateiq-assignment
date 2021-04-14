@@ -13,6 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Container makes a mock API call and gets the data. Pushes it to the components
 - Components are mostly visual and hence stay logicless expect for expand and collapse functionality
 - `Conditional Rendering` is used for the purpose of collapse and expand functionality
+- CSS use `tailwind` style of naming and reuses some of the classes
 
 ## Available Scripts
 
